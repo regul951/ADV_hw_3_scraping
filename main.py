@@ -15,8 +15,8 @@ KEYWORDS = {'дизайн', 'фото', 'web', 'python'}
 
 habr_all_url = 'https://habr.com/ru/all/'
 
-soup = Scrap(habr_all_url).soup
-articles = soup.find_all('article')
+habr_all_soup = Scrap(habr_all_url).soup
+articles = habr_all_soup.find_all('article')
 
 
 # <дата> - <заголовок> - <ссылка>
